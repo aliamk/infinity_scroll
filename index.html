@@ -5,13 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Infinity Scroll</title>
   <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+  <h1>Unsplash API - Infinite Scroll</h1>
+
+  <!-- Loader -->
+  <!-- <div class="loader" id="loader">
+    <img src="loader.svg" alt="Loading">
+  </div> -->
+
+  <!-- Image Container -->
+  <div class="image-container" id="image-container"></div>
   
 
   <!-- Script -->
   <script src='script.js'></script>
+
 </body>
+
 </html>
+
+<!-- STEPS
+
+  1) Went to site loading.io and chose a free loader design.  Played with it's colours/size etc.  Set it to transparent. Downloaded it as an animated SVG.  Placed it within the project folder.  
+
+  2) Picked a Google font and used the @import method to bring it into CSS.  Added a H1 title to test font.  Changed bground colour to whitesmoke.  
+
+  3) Added a loader class and img src="loader.svg" in index.html to display the loader. In CSS, added centering properties.
+
+  4) Added a responsive layout for large smartphone viewing. Reduced title font-size and left-right margins.
+
+  5) Created a new project application on Unsplash Developer and got an API key.  Created a fetch request.
+
+  6) Create a Global variable called photosArray which is empty... will pass API data into this empty array. The displayPhotos() function will call on the photosArray variable and run a forEach method on it.  This will generate html elements based on the data requested from the API (photo link, photo size, photo alt description and photo title)
+
+-->
